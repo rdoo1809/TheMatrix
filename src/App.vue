@@ -1,11 +1,18 @@
 <script lang="ts">
+import MatrixRain from './components/MatrixRain.vue'
+
 export default {
   name: 'App',
+  components: {
+    MatrixRain,
+  },
 }
 </script>
 
 <template>
-  <div>vue</div>
+  <div>
+    <MatrixRain />
+  </div>
 </template>
 
 <style scoped>
@@ -69,5 +76,15 @@ nav a:first-of-type {
     padding: 1rem 0;
     margin-top: 1rem;
   }
+}
+
+.content {
+  color: #0f0;
+  font-family: monospace;
+  font-size: 2rem;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 </style>
